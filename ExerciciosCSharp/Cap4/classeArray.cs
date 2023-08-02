@@ -11,9 +11,29 @@ namespace ExerciciosCSharp.Cap4
         static void Main()
         {
             // Declarando uma array e já atribuindo valores
-            int[] segundArray = new int[] { 1, 3, 5, 7, 9 };
+            int[] segundoArray = new int[] { 1, 3, 5, 7, 9 };
+            Console.Write("Valor do array na posição 0 -> {0}  ", segundoArray[2]);
+        }
+    }
 
-            Console.Write("Valor da array na posição 0 -> {0}  ", segundArray[0]);
+    public class ExemploList
+    {
+        static void Main()
+        {
+            List<string> nomesFuncionarios = new List<string>();
+            nomesFuncionarios.Add("Maria");
+            nomesFuncionarios.Add("João");
+            nomesFuncionarios.Add("André");
+            nomesFuncionarios.Add("Flávia");
+            Console.WriteLine();
+            //foreach (string pessoa in nomesFuncionarios)
+            //{
+            //    Console.WriteLine(pessoa);
+            //}
+
+            //Removendo Maria da lista
+            nomesFuncionarios.RemoveAt(0);
+            Console.WriteLine(nomesFuncionarios[0]);
         }
     }
 }
