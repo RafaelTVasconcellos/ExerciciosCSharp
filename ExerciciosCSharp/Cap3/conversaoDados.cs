@@ -9,6 +9,7 @@ namespace ExerciciosCSharp.Cap3
     {
         static void Main(string[] args)
         {
+            // Aula 06
             // boxing (converte um tipo para Object)
             WriteLine("-----Boxing");
             int percentual = 10;
@@ -40,7 +41,7 @@ namespace ExerciciosCSharp.Cap3
             WriteLine($"desconto: {desconto} - {desconto.GetType()}");
             WriteLine($"objDesconto: {objDesconto} - {objDesconto.GetType()}");
 
-
+            // Aula 07
             // Parse - A sintaxe deve conter o tipo de campo (Int32, Int64, int, DateTime) seguido do .Parse contendo o valor a ser convertido.
             try
             {

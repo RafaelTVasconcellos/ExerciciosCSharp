@@ -97,6 +97,7 @@ namespace ExerciciosCSharp.Cap3
         }
     }
 
+    // Aula 06
     public class Pedido
     {
         public int PedidoID { get; set; }
