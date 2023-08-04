@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>ExerciciosCSharp.Cap4.ExemploList</StartupObject>
+    <StartupObject>ExerciciosCSharp.Cap4.TestListaGenerica</StartupObject>
     <ApplicationIcon />
   </PropertyGroup>
 
@@ -11,5 +11,10 @@
   <ItemGroup>
     <Compile Remove="Cap3\Class1.cs" />
     <Compile Remove="Cap3\funcoesData.cs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Folder Include="Cap5\" />
   </ItemGroup>
 </Project>
