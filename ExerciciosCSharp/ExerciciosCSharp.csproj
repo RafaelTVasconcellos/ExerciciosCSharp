@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>ExerciciosCSharp.Cap5.OlaMundo.ProgramaPrincipal</StartupObject>
+    <StartupObject>ExerciciosCSharp.Cap5.OlaMundo_GetSet.ProgramaPrincipal</StartupObject>
     <ApplicationIcon />
   </PropertyGroup>
 
