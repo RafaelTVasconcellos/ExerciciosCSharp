@@ -27,6 +27,10 @@ namespace Libraryclass
             get { return _AnoPublicacao; }
             set { _AnoPublicacao = value; }
         }
+        public override void Descarte()
+        {
+            this.Titulo = "A Revista foi Reciclada";
+        }
     }
     //principal classe de controle de livros na Biblioteca
     public class Biblioteca02
@@ -68,5 +72,34 @@ namespace Libraryclass
             get { return _Status; }
             set { _Status = value; }
         }
+        //Método Descarte
+        public virtual void Descarte()
+        {
+            _Titulo = "O Livro foi Doado";
+        }
     }
+
+    //classe para controlar as fotos
+    public class Fotos : Revistas
+    {
+        //Propriedades da Classe
+        private string _Tipo;
+        //Neste construtor preciso referenciar a classe base 
+        //Revistas é uma classe já herdada de Biblioteca         
+        public Fotos(string Tipo) : base(0, 0)
+        {
+            _Tipo = Tipo;
+        }
+        public string Tipo //Metodo para acesso a propriedade da classe 
+        {
+            get { return _Tipo; }
+            set { _Tipo = value; }
+        }
+        public override void Descarte()
+        {
+            this.Titulo = "A Foto foi Destruida";
+        }
+    }
+
+
 }

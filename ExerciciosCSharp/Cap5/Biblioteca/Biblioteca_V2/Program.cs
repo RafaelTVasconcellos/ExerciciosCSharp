@@ -30,7 +30,7 @@ namespace Biblioteca_V2
             MinhaBiblioteca.Titulo = "O Estilo  Bill Gates de Gerir";
             MinhaBiblioteca.Paginas = 203;
             MinhaBiblioteca.Status = true;
-            //imprimindo os valores de minha classe
+            //Imprimindo os valores de minha classe
             WriteLine("Autor: " + MinhaBiblioteca.Autor);
             WriteLine("Titulo: " + MinhaBiblioteca.Titulo);
             WriteLine("Paginas: " + MinhaBiblioteca.Paginas);
@@ -38,11 +38,38 @@ namespace Biblioteca_V2
             WriteLine();
             //Inicializando nossa classe com o novo construtor
             Biblioteca02 MeusLivros = new Biblioteca02("Juan Garcia Sola", "Linguagem C", 296, true);
-            //imprimindo os valores de minha classe
+            //Imprimindo os valores de minha classe
             WriteLine("Autor: " + MeusLivros.Autor);
             WriteLine("Titulo: " + MeusLivros.Titulo);
             WriteLine("Paginas: " + MeusLivros.Paginas);
             WriteLine("Status: " + MeusLivros.Status);
+            WriteLine();
+
+            //Inicializando nossa nova classe Fotos
+            Fotos MinhasFotos = new Fotos("Colorida");
+            MinhasFotos.AnoPublicacao = 2021;
+            MinhasFotos.MesPublicacao = 3;
+            MinhasFotos.Autor = "Desconhecido";
+            MinhasFotos.Titulo = "Vida Eterna";
+            MinhasFotos.Paginas = 1;
+            MinhasFotos.Status = true;
+            //imprimindo os valores de minha classe
+            WriteLine("Foto Tipo: "+MinhasFotos.Tipo);
+            WriteLine("Foto Mes: "+MinhasFotos.MesPublicacao);
+            WriteLine("Foto Ano: "+MinhasFotos.AnoPublicacao);
+            WriteLine("Foto Autor: "+MinhasFotos.Autor);
+            WriteLine("Foto Titulo: "+MinhasFotos.Titulo);
+            WriteLine("Foto Paginas: "+MinhasFotos.Paginas);
+            WriteLine("Foto Status: "+MinhasFotos.Status);
+            WriteLine();
+
+            //Mesmo método com comportamentos diferentes
+            MeusLivros.Descarte();
+            WriteLine("Titulo: "+MeusLivros.Titulo);
+            MinhasRevistas.Descarte();
+            WriteLine("Titulo: "+MinhasRevistas.Titulo);
+            MinhasFotos.Descarte();
+            WriteLine("Titulo: "+MinhasFotos.Titulo);
             WriteLine();
         }
     }
