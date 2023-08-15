@@ -20,6 +20,8 @@ namespace Biblioteca_V1
             Console.WriteLine("Paginas: "+MinhaBiblioteca.Paginas);
             Console.WriteLine("Status: "+MinhaBiblioteca.Status);
             Console.WriteLine();
+
+
             //Inicializando a classe com o novo construtor
             Biblioteca MeusLivros = new Biblioteca("Juan Garcia Sola", "Linguagem C", 296, true);
             //imprimindo os valores da classe

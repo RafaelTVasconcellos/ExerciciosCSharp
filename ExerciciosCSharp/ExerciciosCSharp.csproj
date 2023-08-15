@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>Biblioteca_V2.Program</StartupObject>
+    <StartupObject>Cap6.TratamentoExcecao</StartupObject>
     <ApplicationIcon />
   </PropertyGroup>
 
